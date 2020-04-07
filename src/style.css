@@ -1,0 +1,93 @@
+body {
+    background-color: #004556;
+}
+
+body, header, h1{
+    margin: 0;
+    padding: 0;
+}
+
+H1 {
+    font-family: 'Kaushan Script', cursive;    
+    font-size: 80px;
+    color: #818181; 
+    text-transform: uppercase;
+}
+
+.centrado{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#cuerpo {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+h1 span {
+    color:#FF4800;
+    font-size: 50px;
+    top: -25px;
+    position: relative;
+}
+
+#caja1 {
+    background-color: #b5d5dc;
+    height: 120px;
+}
+
+button {
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid #dde0dc;
+    background-color: rgba(191, 181, 166, 0.4);
+    box-shadow: 4px 0px 12px 5px #03323e;
+    color: #e6e5e5;  margin-top: 15px;
+    margin-right: 15px;
+}
+
+button:hover {
+    border:3px solid ;
+    background-color: #FF4800;
+}
+
+fieldset {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p, legend {
+    font-size: 20px;
+    color: black;
+}
+
+input {
+height: 40px;
+width: 250px;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+#mes {
+height: 40px;
+width: 175px;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+#ano {
+height: 40px;
+width: 75px;
+border-radius: 5px;
+}

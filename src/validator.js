@@ -1,5 +1,7 @@
-const validator = {
-  // ...
-};
-
+const validator = () => {
+  //funciones
+}
 export default validator;
+
+
+
