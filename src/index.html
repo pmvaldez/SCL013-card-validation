@@ -14,13 +14,16 @@
     </header>
     <div class="centrado" id="cuerpo">
       <p>Tu app de validacion segura y confiable</p>
-
       <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
         <fieldset>
+          <!--Div que utilizamos para entregar los mensajes de error/exito en el index.js-->
+          <div id="error"></div>
+          <div id="exito"></div>
           <legend>
             Registrate ahora!
           </legend>
-          <input type="text" name="numeroTarjeta" id="numeroTarjeta" placeholder="Numero de tarjeta"  maxlength="16" autocomplete="off">
+          <input type="text" name="numeroTarjeta" id="number-card" placeholder="1111-2222-3333-4444"  maxlength="16" autocomplete="off">
+
           <br><br>
           <input type="text" name="usuario" placeholder="Nombre y Apellido"> 
           <br><br>
@@ -57,11 +60,10 @@
       </fieldset>
       </form>
     
-
-      <button type="submit" name="ENVIAR">Validat Tarjeta</button> <!---TYPE SUBMIT SE USA PARA ENVIAR--->
+      <button type="button" id="submit">Validar</button>
     </div>  
 
     <footer></footer>
-    <script src="./index.js"  type="text/jscript"></script>
+    <script src="./index.js"  type="module"></script>
   </body>
 </html>
