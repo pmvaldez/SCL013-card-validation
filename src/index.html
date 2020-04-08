@@ -6,9 +6,62 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+  
+    <header>
+      <div id="caja1">
+       <h1  class="centrado">FOCUS <span>&#8743;</span></h1>
+      </div>
+    </header>
+    <div class="centrado" id="cuerpo">
+      <p>Tu app de validacion segura y confiable</p>
+
+      <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+        <fieldset>
+          <legend>
+            Registrate ahora!
+          </legend>
+          <input type="text" name="numeroTarjeta" id="numeroTarjeta" placeholder="Numero de tarjeta"  maxlength="16" autocomplete="off">
+          <br><br>
+          <input type="text" name="usuario" placeholder="Nombre y Apellido"> 
+          <br><br>
+          <select name="mes" id="mes">
+            <option value="">Mes</option>
+            <option value="Enero">Enero</option>
+            <option value="febrero">Febreo</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agost">Agosto</option>
+            <option value="sept">Septiembre</option>
+            <option value="oct">Obtubre</option>
+            <option value="nov">Noviembre</option>
+            <option value="dic">Diciembre</option>
+          </select>
+        
+          <select name="ano" id="ano"> 
+            <option value="">Año</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+        </select>
+
+
+      </fieldset>
+      </form>
+    
+
+      <button type="submit" name="ENVIAR">Validat Tarjeta</button> <!---TYPE SUBMIT SE USA PARA ENVIAR--->
+    </div>  
+
     <footer></footer>
-    <script src="index.js" type="module"></script>
+    <script src="./index.js"  type="text/jscript"></script>
   </body>
 </html>
