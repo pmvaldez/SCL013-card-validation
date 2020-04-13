@@ -1,38 +1,63 @@
-import cardValidator from './validator.js';
+import {validator} from "./validator.js";
 
-const elemExito = document.getElementById("exito");
-const elemError = document.getElementById("error");
-elemExito.style.display = 'none';
-elemError.style.display = 'none';
 
-/**
- * Realiza la validacion del numero del numero del
- * numero de la tarjeta ingresado desde la vista (input)
- */
-function validarTarjeta() {
-  // const cardValidNumber = '43451043936735';
-  const numeroTarjeta = document.getElementById("number-card").value;
-  if ( numeroTarjeta.length < 1 ) {
-    document.getElementById("error").innerHTML = 'Debe ingresar un número de tarjeta';
-    return false;
-  }
-
-  const validacion = cardValidator(numeroTarjeta);
-
-  if (validacion.type === 'success') {
-    // Mantenemos ocultado el mensaje de error
-    elemError.style.display = 'none';
-    // Mostramos el mensaje de exito
-    elemExito.style.display = 'block';
-    elemExito.innerHTML = validacion.message;
-  } else {
-    // Mantenemos ocultado el mensaje de exito
-    elemExito.style.display = 'none';
-    // Mostramos el mensaje de error
-    elemError.style.display = 'block';
-    elemError.innerHTML = validacion.message;
-  }
+function enmascarar(inputTarjeta) {
+    return validator.maskify(inputTarjeta);
+    
 }
 
-document.getElementById('submit')
-  .addEventListener('click', validarTarjeta, true);
+function validar() {
+    var elemExito = document.getElementById("exito");
+    var elemError = document.getElementById("error");
+    var tc= document.getElementById("tc");
+    var inputTarjeta =document.getElementById("numeroTarjeta").value;
+    if (inputTarjeta.length < 1) {
+        document.getElementById("error").innerHTML = 'Debe ingresar un número de tarjeta';
+       return false;
+    }
+    var valida= validator.isValid(inputTarjeta);
+    if (valida){
+        elemExito.innerHTML="Tarjeta Valida <i class='fas fa-check'></i>"; 
+        elemExito.style.display="block";
+        elemError.style.display="none";
+        document.getElementById("numeroTarjeta").value= enmascarar(inputTarjeta);
+        tc.vaule=inputTarjeta;
+        
+    } else{
+        elemError.innerHTML="Tarjeta Invalida <i class='fas fa-times'></i>";
+        elemExito.style.display="none";
+        elemError.style.display="block";
+    
+    }
+     
+    
+}
+
+
+
+ window.onload= function(){
+    let mes= document.getElementById("mes");
+    let ano= document.getElementById("ano");
+
+    for(let i = 1; i <= 12; i++){
+        let opcion = document.createElement('option');
+        opcion.value = i;
+        opcion.innerText = i;
+        mes.appendChild(opcion)
+    }
+
+    let yearActual = new Date().getFullYear();
+    for(let i = yearActual; i <= yearActual + 8; i++){
+        let opcion = document.createElement('option');
+        opcion.value = i;
+        opcion.innerText = i;
+        ano.appendChild(opcion)
+    }
+
+    document.getElementById("submit").addEventListener('click',validar,true);
+
+ }
+
+
+
+
