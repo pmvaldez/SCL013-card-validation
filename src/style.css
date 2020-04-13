@@ -1,5 +1,7 @@
 body {
-    background-color: #004556;
+    background-image: url("../img/fondotdc.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 body, header, h1{
@@ -7,10 +9,11 @@ body, header, h1{
     padding: 0;
 }
 
+
 H1 {
     font-family: 'Kaushan Script', cursive;    
     font-size: 80px;
-    color: #818181; 
+    color: #e6e6e6; 
     text-transform: uppercase;
 }
 
@@ -38,71 +41,89 @@ h1 span {
 }
 
 #caja1 {
-    background-color: #b5d5dc;
-    height: 120px;
+    background-color: #248397;
+    margin-bottom: 60px;
 }
 
 button {
-    border-radius: 15px;
-    padding: 15px;
-    border: 1px solid #dde0dc;
-    background-color: rgba(191, 181, 166, 0.4);
-    box-shadow: 4px 0px 12px 5px #03323e;
-    color: #e6e5e5;  margin-top: 15px;
-    margin-right: 15px;
+    color: rgb(239, 65, 35);
+    border-color: rgb(239, 65, 35);
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 38px;
 }
 
 button:hover {
     border:3px solid ;
-    background-color: #FF4800;
+    background-color:#FF4800;
+    border-color: #ffffff;
+    color: #ffffff 
+
 }
 
 fieldset {
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background:rgba(239,65,35,0.8);
     width: 280px;
     height: 280px;
-    text-align: center;
+    text-align: center top;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
 }
 
-p, legend {
+
+h1 p, legend {
     font-size: 20px;
-    color: black;
+    color: #383737;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+h1 p{
+    margin: 0px;
+    padding-bottom: 20px;
+    color: #a8e1ec;
 }
 
 input {
-height: 40px;
-width: 250px;
-border-radius: 5px;
-margin-top: 10px;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 #mes {
-height: 40px;
-width: 175px;
-border-radius: 5px;
-margin-top: 10px;
+    height: 40px;
+    width: 175px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 #ano {
-height: 40px;
-width: 75px;
-border-radius: 5px;
+    height: 40px;
+    width: 75px;
+    border-radius: 5px;
 }
+
 #error {
     box-sizing: border-box;
     padding: 10px 20px;
-    background-color: lightcoral;
+    background-color: red;
     color: white;
     width: 100%;
+    display: none;
+    margin-top: 10px;
+    border-radius: 3px;
+
 }
   
 #exito {
     box-sizing: border-box;
     padding: 10px 20px;
-    background-color: green;
+    background-color: rgb(56, 141, 56);
     color: white;
     width: 100%;
+    display: none;
+    margin-top: 10px;
+    border-radius: 3px;
 }

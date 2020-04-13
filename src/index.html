@@ -4,66 +4,50 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/24e71e8c99.js" crossorigin="anonymous"></script>
+    <script src="./index.js" type="module" ></script>
   </head>
+
+
+
   <body>
-  
     <header>
       <div id="caja1">
-       <h1  class="centrado">FOCUS <span>&#8743;</span></h1>
+       <h1  class="centrado">FOCUS <span>&#8743;</span>
+       <p>Tu app de validacion segura y confiable</p>
+      </h1>
       </div>
     </header>
     <div class="centrado" id="cuerpo">
-      <p>Tu app de validacion segura y confiable</p>
-      <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-        <fieldset>
-          <!--Div que utilizamos para entregar los mensajes de error/exito en el index.js-->
-          <div id="error"></div>
-          <div id="exito"></div>
-          <legend>
-            Registrate ahora!
-          </legend>
-          <input type="text" name="numeroTarjeta" id="number-card" placeholder="1111-2222-3333-4444"  maxlength="16" autocomplete="off">
+      
 
-          <br><br>
+
+      <form action="">
+        <fieldset>
+            
+          <legend>
+            Ingresa tus datos!
+          </legend>
+            <input id= "numeroTarjeta" type="text" name="numeroTarjeta" placeholder="Numero de tarjeta" maxlength="16" autocomplete="off">
+            <input type="hidden" id="tc" name="tc">
+            <br><br>
           <input type="text" name="usuario" placeholder="Nombre y Apellido"> 
           <br><br>
           <select name="mes" id="mes">
             <option value="">Mes</option>
-            <option value="Enero">Enero</option>
-            <option value="febrero">Febreo</option>
-            <option value="marzo">Marzo</option>
-            <option value="abril">Abril</option>
-            <option value="mayo">Mayo</option>
-            <option value="junio">Junio</option>
-            <option value="julio">Julio</option>
-            <option value="agost">Agosto</option>
-            <option value="sept">Septiembre</option>
-            <option value="oct">Obtubre</option>
-            <option value="nov">Noviembre</option>
-            <option value="dic">Diciembre</option>
           </select>
         
           <select name="ano" id="ano"> 
             <option value="">Año</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="2027">2027</option>
-        </select>
-
-
-      </fieldset>
+          </select>
+          <div id="error"></div>
+          <div id="exito"></div> 
+        </fieldset>
       </form>
-    
-      <button type="button" id="submit">Validar</button>
+   
+      <button  type="button" id="submit">VALIDAR</button> 
     </div>  
-
-    <footer></footer>
-    <script src="./index.js"  type="module"></script>
   </body>
 </html>
