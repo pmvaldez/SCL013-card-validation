@@ -11,8 +11,8 @@ describe('validator', () => {
       expect(typeof validator.isValid).toBe('function');
     });
 
-    test.skip('debería retornar true para "4083952015263"', () => {
-      // escribe aquí tu test
+    test('debería retornar true para "40839520152633"', () => {
+      expect(validator.isValid(4083952015263)).toBe(true);
     });
   });
 
@@ -21,8 +21,8 @@ describe('validator', () => {
       expect(typeof validator.maskify).toBe('function');
     });
 
-    test.skip('Debería retornar "############5616" para "4556364607935616"', () => {
-      // escribe aquí tu test
+    test('Debería retornar "############5616" para "4556364607935616"', () => {
+      expect(validator.maskify("4556364607935616")).toBe("############5616");
     });
   });
 });
