@@ -1,4 +1,4 @@
-import {validator} from "./validator.js";
+import validator from "./validator.js";
 
 
 function enmascarar(inputTarjeta) {
@@ -37,7 +37,7 @@ function validar() {
 
  window.onload= function(){
     let mes= document.getElementById("mes");
-    let ano= document.getElementById("ano");
+    let year= document.getElementById("year");
 
     for(let i = 1; i <= 12; i++){
         let opcion = document.createElement('option');
@@ -51,7 +51,7 @@ function validar() {
         let opcion = document.createElement('option');
         opcion.value = i;
         opcion.innerText = i;
-        ano.appendChild(opcion)
+        year.appendChild(opcion)
     }
 
     document.getElementById("submit").addEventListener('click',validar,true);
