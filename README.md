@@ -1,5 +1,5 @@
 # FOCUS 
-#### Una App de validacion Segura y Confiable
+#### Tu APP de validacion Segura y Confiable
 
 ![Logo](https://github.com/pmvaldez/SCL013-card-validation/blob/master/img/logo.png?raw=true)
 
@@ -32,6 +32,8 @@ el cual nos ayudara a validar números de identificación en tus tarjetas de cr�
 
 Se encuentra diseñada para publico general, pudiendo ser usada con cualquier entidad bancaria que sea requerida.
 Una plataforma muy facil de entender y manejar.
+
+**Nota:** Tiene como unica limitante su uso exclusivo para mayores de 18 años.
 
 ## 4. Prototipo en Papel
 
