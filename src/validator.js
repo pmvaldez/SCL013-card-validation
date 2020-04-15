@@ -17,10 +17,11 @@ const validator ={
          var retorno= false;
          //se comienza a numerar el largo de la tarjeta desde cero
              let suma = 0;
-             //Se crea un for que recorre el largo de la tarjeta y se incrementa un numero a cada posicion//
+             //Se crea un for que recorre el largo de la numero de la tarjeta obteniendo un numero en cada posicion//
              for(let i = 0; i < creditCardNumber.length; i++) {
-               //identificar el valor de i, separa y me da el valor de los numeros pares
+               //se obtiene un nuemro en la posicion i de la cadena del numero de tarjeta
                let numero = parseInt(creditCardNumber.charAt(i));
+               //determina si la variable i contiene un numero par
                  if (i%2== 0) {
                    //Se multiplican los pares por dos//
                      let multiplica= numero *2;
@@ -35,6 +36,7 @@ const validator ={
                      suma = suma + numero;
                  }
              }
+             //determina si la suma es multiplo de 10 (termina en cero)
              if (suma%10== 0) {
                  retorno= true;
              }
