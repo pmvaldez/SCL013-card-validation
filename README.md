@@ -8,10 +8,9 @@
 * [2. Resumen del Producto](#2-resumen-del-producto)
 * [3. Objetivos del Producto](#3-objetivos-del-producto)
 * [4. Prototipos](#4-prototipo-papel)
-* [5. Feedback del Producto](#5-feedback)
 * [5. Diagrama de Flujo](#5-diagrama)
-* [6. Feedback del Producto](#5-feedback)
-* [7. Producto Final](#6-producto-final)
+* [6. Feedback del Producto](#6-feedback)
+* [7. Producto Final](#7-producto-final)
 
 ***
 
